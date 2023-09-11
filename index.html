@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistical Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Statistical Calculator</h1>
+      <label for="numbers">Enter numbers (comma-separated):</label>
+      <input type="text" id="numbers" placeholder="e.g., 1, 2, 3, 4, 5" />
+      <button id="calculate">Calculate</button>
+      <div class="results">
+        <p>Mean: <span id="meanResult">-</span></p>
+        <p>Median: <span id="medianResult">-</span></p>
+        <p>Mode: <span id="modeResult">-</span></p>
+        <p>Frequency: <span id="frequencyResult"></span></p>
+        <p>Standard Deviation: <span id="stdDevResult"></span></p>
+      </div>
+      <button id="saveAsPDF">Save as PDF</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+  </body>
+</html>
